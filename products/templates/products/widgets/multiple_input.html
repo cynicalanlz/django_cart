@@ -1,0 +1,8 @@
+{% with id=widget.attrs.id %}
+    <table{% if id %} id="{{ id }}"{% endif %}  class="table">
+    <tbody>
+        {% for option in widget.optgroups %}
+        <tr>{% include option.template_name with widget=option %}</tr>
+        {% endfor %}
+    </tbody>
+</table>{% endwith %}
