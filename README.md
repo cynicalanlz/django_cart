@@ -8,6 +8,7 @@ pip install -r reqs.txt
 ./manage.py makemigrations
 ./manage.py migrate
 ./manage.py createsuperuser
+./manage.py runserver
 ```
 
 <h2>Step 2</h2>
